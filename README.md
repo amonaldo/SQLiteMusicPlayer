@@ -1,5 +1,7 @@
 # SQLiteMusicPlayer
+
 A C# Music Player, based on SQLite, NAudio, Windows Form and Metro Design
+
 <b> Overview </b> 
 <ul>
 <li> The SQLite database makes the app portable</li>
