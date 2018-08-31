@@ -18,8 +18,8 @@ namespace SQLiteMusicPlayer
         public void playSong(String artist, String song, byte[] audio)
         {
             dispose();
-            this.artist.Text = artist;
-            this.song.Text = song;
+            this.artist.Text = truncate(artist, 15); ;
+            this.song.Text = truncate(song, 15);
             try
             {
                 WaveStream pcm = new WaveChannel32(new NAudio.Wave.WaveFileReader(new MemoryStream(audio)));
@@ -89,6 +89,11 @@ namespace SQLiteMusicPlayer
             {
                 output.Stop();
             }
+        }
+
+        private string truncate(string value, int maxChars)
+        {
+            return value.Length <= maxChars ? value : value.Substring(0, maxChars) + "...";
         }
     }
 }
