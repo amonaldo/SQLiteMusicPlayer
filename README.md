@@ -11,7 +11,3 @@ A C# Music Player, based on SQLite, NAudio, Windows Form and Metro Design
 </ul>
 
 ![alt text](https://raw.githubusercontent.com/amonaldo/SQLiteMusicPlayer/master/screenshot.png)
-
-If you wish to donate, please visit my paypal page 
-
-https://www.paypal.me/aminos1996
